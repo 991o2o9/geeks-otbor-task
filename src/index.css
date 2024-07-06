@@ -1,13 +1,52 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.pokemons-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.section-cards {
+	display: flex;
+	justify-content: center;
+}
+
+.cards {
+	background-color: lightblue;
+	border-radius: 10px;
+	box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.1);
+	padding: 16px;
+	text-align: center;
+	width: 300px;
+	transition: transform 0.3s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 90px;
+}
+
+.cards:hover {
+	transform: scale(1.05);
+}
+
+.cards img {
+	width: 100px;
+	height: auto;
+}
+
+.cards span {
+	display: block;
+	margin-top: 8px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
 }
